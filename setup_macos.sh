@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 
-# Install pip
-sudo easy_install pip
-
 # Install homebrew
 if test ! $(which brew); then
     echo "Installing homebrew..."
@@ -12,6 +9,7 @@ fi
 
 # Update and install homebrew recipes
 brew update
+brew install python
 brew install bash-completion
 brew install tree
 brew install cask
