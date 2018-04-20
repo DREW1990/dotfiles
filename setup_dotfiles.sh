@@ -12,7 +12,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 fi
 
 # Setup .vimrc
-special_echo "Overwriting $HOME/.vim"
+echo "Overwriting $HOME/.vim"
 echo "source $DIR/_vimrc" > $HOME/.vimrc
 mkdir -p $HOME/.vim/colors $/HOME/.vim/autoload
 cp $DIR/vim_colorschemes/onedark.vim $HOME/.vim/colors
