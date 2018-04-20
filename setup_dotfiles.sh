@@ -5,10 +5,10 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Setup .bash_profile
 if [ "$(uname)" == "Darwin" ]; then
   echo "Setting up $HOME/.bashrc"
-  echo "source $DIR/_bashrc" >> $HOME/.bash_profile
+  echo "source $DIR/_bash_profile" >> $HOME/.bash_profile
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-  echo "Seeting up $HOME/.bash_profile"
-  echo "source $DIR/_bashrc" >> $HOME/.bashrc
+  echo "Setting up $HOME/.bash_profile"
+  echo "source $DIR/_bash_profile" >> $HOME/.bashrc
 fi
 
 # Setup .vimrc
