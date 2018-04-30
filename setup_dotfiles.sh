@@ -14,6 +14,6 @@ fi
 # Setup .vimrc
 echo "Overwriting $HOME/.vim"
 echo "source $DIR/_vimrc" > $HOME/.vimrc
-mkdir -p $HOME/.vim/colors $/HOME/.vim/autoload
+mkdir -p $HOME/.vim/colors $HOME/.vim/autoload
 cp $DIR/vim_colorschemes/onedark.vim $HOME/.vim/colors
 cp $DIR/vim_colorschemes/autoload/onedark.vim $HOME/.vim/autoload
